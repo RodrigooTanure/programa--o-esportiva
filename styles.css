@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+.asdad {
+    background-color: rgba(0, 0, 0, 0.441);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    backdrop-filter: blur(1px);
+    left: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 1em; */
+    /* display: flex; */
+    background-image: url('Piraque_Aerea (2).jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+textarea {
+    resize: none;
+}
+
+.logo-decn {
+    position: absolute;
+    right: -60px;
+    top: 200px;
+    width: 220px;
+    filter: drop-shadow(.0rem .0rem .9rem #e23);
+    transform: rotate(90deg);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 2.5em;
+    letter-spacing: 6px;
+}
+
+main {
+    position: relative;
+}
+
+.form-containers {
+    display: flex;
+    justify-content: space-around;
+    /* border: 1px solid red; */
+}
+
+#form01 {
+    transition: 150ms;
+}
+
+.form-containers #form02,
+#form03 {
+    visibility: hidden;
+    transition: 150ms;
+    position: relative;
+    right: 10000px;
+}
+
+.form-containers02 {
+    display: flex;
+    justify-content: space-around;
+    transition: 150ms;
+    height: 0px;
+}
+
+#form04 {
+    visibility: hidden;
+    transition: 150ms;
+    position: relative;
+    right: 5000px;
+}
+
+#form05,
+#form06 {
+    visibility: hidden;
+    transition: 150ms;
+    position: relative;
+    right: 5000px;
+}
+
+
+.form {
+    width: 31%;
+    /* margin-left: 20px; */
+    margin-top: 5px;
+    margin-bottom: 10px;
+    /* border: 1px solid red; */
+    background-color: rgba(255, 255, 255, 0.708);
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.form .dados {
+    width: 100%;
+    margin-bottom: 20px;
+    /* border: 1px solid black; */
+}
+
+.form label {
+    display: inline-block;
+    width: 38%;
+
+}
+
+.form input {
+    border: none;
+    width: 60%;
+    outline: none;
+    box-shadow: 0 0 0 1px black;
+    height: 20px;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: rgba(255, 255, 255, 0.678);
+    transition: 200ms;
+}
+
+input:focus {
+    box-shadow: 0 0 0 2px #0055a4;
+    /* background-color: #c47001; */
+}
+
+.form p {
+    text-align: center;
+    margin-bottom: 10px;
+
+}
+
+.form .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 99%;
+    margin-top: -25px;
+    /* border: 1px solid black; */
+}
+
+.confirm {
+    font-size: .9em;
+    color: green;
+}
+
+.neg {
+    font-size: .9em;
+    color: rgb(162, 0, 0);
+}
+
+.btn {
+    /* margin-top: 10px; */
+    /* margin-right: 5px; */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 11px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.ipt-imp .btn {
+    padding: 5px 10px;
+    border-radius: 10%;
+}
+
+.ipt-imp .btn-primary:hover {
+    border: 1px solid #0d6efd;
+    color: #0d6efd;
+    background-color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #fff;
+    color: #dc3545;
+    border: 1px solid #dc3545;
+}
+
+.bi {
+    font-size: 2em;
+}
+
+.col-3 {
+    padding: 0;
+}
+
+
+.adicionar {
+    background-color: rgb(0, 176, 0);
+    color: white;
+    transition: 200ms;
+}
+
+.adicionar:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 176, 0);
+    border: 1px solid rgb(0, 176, 0);
+}
+
+.remover {
+    background-color: rgb(176, 15, 0);
+    color: white;
+    transition: 200ms;
+}
+
+.remover:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(176, 15, 0);
+}
+
+.form .limpar {
+    background-color: red;
+}
+
+/* ======================= */
+
+.ipt-imp {
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.708);
+    margin: 30px auto 0 auto;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px 8px;
+    transition: 600ms;
+
+}
+
+.input-dia input {
+    width: 30%;
+    padding: 5px 8px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    margin-left: 0px;
+    box-shadow: 0 0 0 1px black;
+    background-color: rgba(255, 255, 255, 0.708);
+    transition: 200ms;
+}
+
+.input-dia input:focus {
+    box-shadow: 0 0 0 2px #0055a4;
+    ;
+}
+
+.input-dia select {
+    border-radius: 10px;
+    width: 30%;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 0 1px black;
+
+}
+
+.input-dia select,
+option {
+    padding: 4px 2px;
+}
+
+.esc-dia {
+    margin-top: 6px;
+}
+
+.input-dia label {
+    display: inline-block;
+    width: 40%;
+}
+
+.input-dia #confNeg {
+    display: block;
+    margin: 5px 0;
+}
+
+.imprimir {
+    background-color: #c47001;
+    transition: 200ms;
+    font-weight: 700;
+    display: block;
+}
+
+.imprimir:hover {
+    background-color: white;
+    color: #c47001;
+}
+
+
+
+.buttonimp {
+    width: 100%;
+    text-align: center;
+    /* position: relative;
+    left: 50px; */
+
+}
+
+.imprimir span {
+    font-size: 6em;
+}
+
+.helper {
+    width: 49%;
+    display: inline-block;
+    position: relative;
+}
+
+.helper .ajuda .helpbtn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: 300ms;
+}
+
+.helper .ajuda .helpbtn span {
+    font-size: 3em;
+}
+
+.helper .informacoes {
+    position: absolute;
+    bottom: 5px;
+    right: 2px;
+    width: 0px;
+    height: 0px;
+    background-color: rgba(255, 255, 255, 0.907);
+    transition: 200ms;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#inf {
+    display: none;
+    transition: 200ms;
+    position: absolute;
+    width: 600px;
+    right: 00px;
+    /* border: 1px solid red; */
+    z-index: 99;
+    font-size: 1.2em;
+    padding: 10px;
+}
+
+.helper .ajuda .helpbtn:hover .informacoes,
+.hidden {
+    display: block;
+    width: 600px;
+    height: 200px;
+}
+
+.obs {
+    position: relative;
+    right: 50px;
+    bottom: 1px;
+    /* border: 1px solid red; */
+    width: 200px;
+}
+
+.obs label {
+    /* border: 1px solid gold; */
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-size: 1em;
+}
+
+.obs button {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 8px;
+}
+
+.obs #obs {
+    outline: none;
+    border: none;
+    resize: none;
+    display: block;
+    margin: 8px 0;
+    box-shadow: 0 0 0 1px black;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.678);
+    transition: 200ms;
+    padding: 2px 4px;
+}
+
+.obs #obs:focus {
+    box-shadow: 0 0 0 2px #0055a4;
+}
+
+/* ========================= */
+
+@media print {
+
+    main {
+        display: none;
+    }
+
+    .asdad {
+        display: none;
+    }
+
+    .art {
+        border: 2px solid black;
+        width: 100% !important;
+        height: 100vh !important;
+        margin: auto;
+    }
+
+}
+
+/* ============================== */
+
+.camp {
+    text-transform: uppercase;
+    width: 70%;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    margin: auto;
+    border-radius: 30px 30px 0px 0px;
+    padding: 8px 2px;
+    font-size: .8em;
+}
+
+.art {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    /* height: 100px; */
+    margin: auto;
+    border-radius: 5px;
+    padding: 10px 2px;
+    border: 7px double black;
+    background-color: white;
+}
+
+#datas {
+    font-size: 1.5em;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#logo-clube {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 107px;
+}
+
+#logo-copa {
+    width: 110px;
+    height: 100px;
+    position: absolute;
+    bottom: 3px;
+    right: 3px;
+    visibility: hidden;
+}
+
+.title-prg {
+    color: red;
+    font-size: 1.7em;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+
+.bck-art {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.681);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.art h3 {
+    font-weight: 600;
+}
+
+.jogos {
+    width: 90%;
+    margin: 20px auto 0 auto;
+    text-transform: uppercase;
+}
+
+.jogos h2,
+h3 {
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+.data {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.infos {
+    width: 70%;
+    margin: auto;
+    /* background-color: red; */
+    border-bottom: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    padding: 8px 2px;
+    border-radius: 0px 0px 30px 30px;
+    text-transform: uppercase;
+    font-weight: 1000;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-around;
+    font-size: .8em;
+}
+
+.adicionado {
+    box-shadow: 0px 0px 0px 5px green;
+}
+
+.nAdic {
+    box-shadow: 0px 0px 0px 5px red;
+}
+
+.adversarios {
+    /* background-color: red; */
+    font-size: 1.4em;
+    width: 95%;
+    border: 2px solid black;
+    margin: auto;
+    border-radius: 20px;
+    padding: 2px 3px;
+    font-weight: bolder;
+}
+
+.adversarios p {
+    margin-bottom: 0;
+}
+
+.adversarios .center {
+    text-transform: uppercase;
+    /* top: 0; */
+}
+
+.art-imp {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100vh !important;
+}
+
+.preview-class {
+    display: block;
+    position: absolute;
+    width: 50%;
+    min-height: 100vh;
+    transform: translateX(-50%);
+    top: 0%;
+    left: 50%;
+}
+
+.art .observacao {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    font-weight: 700;
+    background-image: url('21smM0NvKdL.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 75%;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 3px;
+}
+
+.hora {
+    text-transform: lowercase;
+}
+
+@media screen and (min-width: 1550px) {
+    .input-dados {
+        width: 85%;
+        margin: auto;
+        justify-content: space-evenly;
+    }
+
+    .ipt-imp {
+        width: 85%;
+    }
+
+    .imp-sec {
+        position: relative;
+        right: 120px;
+    }
+
+    .imp-sec .buttonimp {
+        width: 250px;
+    }
+
+    .obs {
+        position: relative;
+        right: 120px;
+        bottom: 5px;
+        /* border: 1px solid red; */
+        width: 205px;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        padding: 10px;
+    }
+}
+
+.vanilla-calendar {
+    margin: auto;
+}
+
+@media (max-width: 1600px) {
+    .m-cons {
+        margin-left: 50px;
+    }
+}
+
+/* A FAZEEEEEEEEEEEEEEEEEEEEEEEEEER */
